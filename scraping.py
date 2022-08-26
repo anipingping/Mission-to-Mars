@@ -98,7 +98,10 @@ def mars_facts():
     # Convert dataframe into HTML format, add bootstrap
     return df.to_html(classes="table table-striped")
 
-def hemisphere_data(browser):
+def hemispheres(browser):
+    url = 'https://marshemispheres.com/'
+    browser.visit(url + 'index.html')
+    
     # Create a list to hold the images and titles.
     hemisphere_image_urls = []
 
